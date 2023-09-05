@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const Container = styled.span`
   font-size: 12px;
@@ -6,5 +6,5 @@ export const Container = styled.span`
   border-radius: 5px;
   margin-right: 6px;
   color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-  background-color: ${({ theme }) => theme.COLORS.ORANGE};
+  background-color: ${({ theme }) => theme.COLORS.PINK};
 `

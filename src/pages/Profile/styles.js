@@ -21,7 +21,7 @@ export const Form = styled.form`
   max-width: 340px;
   margin: 30px auto 0;
 
-  >div:nth-child(4){
+  > div:nth-child(4) {
     margin-top: 24px;
   }
 `
@@ -31,18 +31,18 @@ export const Avatar = styled.div`
 
   width: 186px;
   height: 186px;
-  
+
   > img {
     border-radius: 50%;
     width: 186px;
     height: 186px;
   }
 
-  >label{
+  > label {
     width: 48px;
     height: 48px;
 
-    background-color: ${({theme})=>theme.COLORS.ORANGE};
+    background-color: ${({ theme }) => theme.COLORS.PINK};
     border-radius: 50%;
 
     display: flex;
@@ -55,15 +55,14 @@ export const Avatar = styled.div`
 
     cursor: pointer;
 
-    input{
+    input {
       display: none;
     }
 
-    svg{
+    svg {
       width: 20px;
       height: 20px;
-      color: ${({theme}) => theme.COLORS.BACKGROUND_800};
+      color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
     }
-
   }
 `

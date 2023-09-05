@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const Container = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ export const Container = styled.div`
   }
 
   .button-add {
-    color: ${({ theme }) => theme.COLORS.ORANGE};
+    color: ${({ theme }) => theme.COLORS.PINK};
   }
 
   > input {

@@ -31,7 +31,7 @@ export const Brand = styled.div`
 
   > h1 {
     font-size: 24px;
-    color: ${({ theme }) => theme.COLORS.ORANGE};
+    color: ${({ theme }) => theme.COLORS.PINK};
   }
 `
 
@@ -61,7 +61,7 @@ export const Content = styled.div`
 export const NewNote = styled(Link)`
   grid-area: newnote;
 
-  background-color: ${({ theme }) => theme.COLORS.ORANGE};
+  background-color: ${({ theme }) => theme.COLORS.PINK};
   color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
   display: flex;
