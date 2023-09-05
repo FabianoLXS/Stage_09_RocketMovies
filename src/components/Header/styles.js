@@ -55,7 +55,8 @@ export const Logout = styled.button`
 `
 
 export const Search = styled.div`
-  padding: 64px 64px 0;
+  padding: 24px;
+  width: 70%;
 `
 export const Input = styled.div`
 

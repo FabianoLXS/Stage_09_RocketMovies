@@ -5,6 +5,11 @@ import { Input } from "../../components/Input"
 export function Header(){
   return (
     <Container>
+
+      <Search>
+        <Input placeholder="Pesquisar pelo título" />
+      </Search>
+
       <Profile to="/profile">
         <img src="https://github.com/fabianolxs.png" alt="" />
         <div>
@@ -12,11 +17,7 @@ export function Header(){
           <strong>Fabiano Xavier</strong>
         </div>
       </Profile>
-
-      <Search>
-        <Input placeholder="Pesquisar pelo título" />
-      </Search>
-
+      
       <Logout>
         <RiShutDownLine />
       </Logout>
