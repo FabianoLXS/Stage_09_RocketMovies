@@ -67,6 +67,7 @@ export const NewNote = styled(Link)`
   align-items: center;
   justify-content: center;
   height: 48px;
+  width: 207px;
   padding: 32px;
   border-radius: 8px;
 

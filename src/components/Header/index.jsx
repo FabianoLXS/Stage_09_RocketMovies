@@ -5,7 +5,7 @@ import { Input } from "../../components/Input"
 export function Header(){
   return (
     <Container>
-
+      
       <Search>
         <Input placeholder="Pesquisar pelo título" />
       </Search>

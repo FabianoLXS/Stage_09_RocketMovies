@@ -17,16 +17,14 @@ export function Home() {
       <Header></Header>
 
       <Content>
+        <HomeTitle>
+          <h2>Meus Filmes</h2>
 
-      <HomeTitle>
-        <h2>Meus Filmes</h2>
-
-      <NewNote to="/new">
-        <FiPlus />
-        Adicionar filme
-      </NewNote>
-
-      </HomeTitle>
+          <NewNote to="/new">
+            <FiPlus />
+            Adicionar filme
+          </NewNote>
+        </HomeTitle>
 
         <Section title="minhas notas">
           <Note
