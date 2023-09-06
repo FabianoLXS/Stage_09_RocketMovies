@@ -1,5 +1,5 @@
 import {FiPlus} from 'react-icons/fi'
-import { Container, Brand, Menu, Search, Content, NewNote } from "./styles"
+import { Container, Brand, Menu, Content, NewNote } from "./styles"
 
 import { Header } from "../../components/Header"
 import { Input } from "../../components/Input"
@@ -16,22 +16,7 @@ export function Home() {
 
       <Header></Header>
 
-      <Menu>
-        <li>
-          <ButtonText title="Todos" />
-        </li>
-        <li>
-          <ButtonText title="React" />
-        </li>
-        <li>
-          <ButtonText title="Nodejs" />
-        </li>
-      </Menu>
 
-      <Search>
-        <Input placeholder="Pesquisar pelo título"
-         />
-      </Search>
 
       <Content>
         <Section title="minhas notas">

@@ -10,9 +10,9 @@ export const Container = styled.div`
   grid-template-rows: 105px 128px auto 64px;
   grid-template-areas:
     "brand header"
-    "menu search"
-    "menu content"
-    "newnote content";
+    "menu newnote"
+    "content content"
+    "content content";
 
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 `
@@ -62,11 +62,13 @@ export const NewNote = styled(Link)`
   grid-area: newnote;
 
   background-color: ${({ theme }) => theme.COLORS.PINK};
-  color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+  color: ${({ theme }) => theme.COLORS.GRAY_200};
 
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 8px;
+  
 
   > svg {
     margin-right: 8px;
