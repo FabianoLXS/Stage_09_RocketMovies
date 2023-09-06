@@ -10,7 +10,6 @@ export const Container = styled.div`
   grid-template-rows: 105px 128px auto 64px;
   grid-template-areas:
     "brand header"
-    "menu newnote"
     "content content"
     "content content";
 
@@ -54,7 +53,7 @@ export const Search = styled.div`
 
 export const Content = styled.div`
   grid-area: content;
-  padding: 0 64px;
+  padding: 50px 64px;
   overflow-y: auto;
 `
 
@@ -67,10 +66,20 @@ export const NewNote = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 48px;
+  padding: 32px;
   border-radius: 8px;
-  
 
   > svg {
     margin-right: 8px;
   }
+`
+
+export const HomeTitle = styled.div`
+  grid-area: HomeTitle;
+  color: ${({ theme }) => theme.COLORS.WHITE};
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
 `

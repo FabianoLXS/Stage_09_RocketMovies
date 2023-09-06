@@ -1,11 +1,11 @@
-import {FiPlus} from 'react-icons/fi'
-import { Container, Brand, Menu, Content, NewNote } from "./styles"
+import { FiPlus } from "react-icons/fi"
+import { Container, Brand, Content, NewNote, HomeTitle } from "./styles"
 
 import { Header } from "../../components/Header"
 import { Input } from "../../components/Input"
 import { Note } from "../../components/Note"
 import { Section } from "../../components/Section"
-import {ButtonText} from "../../components/ButtonText"
+import { ButtonText } from "../../components/ButtonText"
 
 export function Home() {
   return (
@@ -16,24 +16,30 @@ export function Home() {
 
       <Header></Header>
 
-
-
       <Content>
-        <Section title="minhas notas">
-          <Note data={{ 
-            title: 'React',
-            tags: [
-              {id: '1', name: 'react'},
-              {id: '2', name: 'rocketseat'}
-              ]
-          }}/>
-        </Section>
-      </Content>
+
+      <HomeTitle>
+        <h2>Meus Filmes</h2>
 
       <NewNote to="/new">
         <FiPlus />
-        Criar nota 
+        Adicionar filme
       </NewNote>
+
+      </HomeTitle>
+
+        <Section title="minhas notas">
+          <Note
+            data={{
+              title: "React",
+              tags: [
+                { id: "1", name: "react" },
+                { id: "2", name: "rocketseat" },
+              ],
+            }}
+          />
+        </Section>
+      </Content>
     </Container>
   )
 }
