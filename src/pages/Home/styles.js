@@ -9,7 +9,7 @@ export const Container = styled.div`
   grid-template-columns: 250px auto;
   grid-template-rows: 105px 128px auto 64px;
   grid-template-areas:
-    "brand header"
+    "header header"
     "content content"
     "content content";
 

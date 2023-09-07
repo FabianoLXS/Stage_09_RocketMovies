@@ -1,5 +1,5 @@
 import { FiPlus } from "react-icons/fi"
-import { Container, Brand, Content, NewNote, HomeTitle } from "./styles"
+import { Container, Content, NewNote, HomeTitle } from "./styles"
 
 import { Header } from "../../components/Header"
 import { Input } from "../../components/Input"
@@ -10,9 +10,9 @@ import { ButtonText } from "../../components/ButtonText"
 export function Home() {
   return (
     <Container>
-      <Brand>
+      {/* <Brand>
         <h1>RocketMovies</h1>
-      </Brand>
+      </Brand> */}
 
       <Header></Header>
 
