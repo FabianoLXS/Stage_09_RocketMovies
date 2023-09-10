@@ -19,8 +19,6 @@ Frontend do projeto RocketMovies, sua aplicação para acompanhar tudo que assis
 
 A aplicação conta com páginas de login, cadastro, visualizar filme, perfil e cadastrar filme.
 
-!["Página home"](./src/assets/home.png)
-
 <h2 id="features">🛠️ Funcionalidades</h2>
 
 A aplicação apresenta as seguintes funcionalidades:
