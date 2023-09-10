@@ -11,10 +11,6 @@
   <a href="#license">Licença</a>
 </p>
 
-<p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
-</p>
-
 <h2 id="project">📁 Projeto</h2>
 
 Frontend do projeto RocketMovies, sua aplicação para acompanhar tudo que assistir!
@@ -71,5 +67,3 @@ $ npm run dev
 Esse projeto está sob a licença MIT.
 
 ---
-
-
