@@ -1,39 +1,62 @@
-import { FiPlus } from "react-icons/fi"
-import { Container, Content, NewNote, HomeTitle } from "./styles"
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { FiPlus } from "react-icons/fi";
+import { Container, Content, NewMovie } from "./styles";
 
-import { Header } from "../../components/Header"
-import { Input } from "../../components/Input"
-import { Note } from "../../components/Note"
-import { Section } from "../../components/Section"
-import { ButtonText } from "../../components/ButtonText"
+import { api } from "../../services/api";
+
+import { Header } from "../../components/Header";
+import { Input } from "../../components/Input";
+import { Movie } from "../../components/Movie";
 
 export function Home() {
+  const [movies, setMovies] = useState([]);
+  const [search, setSearch] = useState("");
+
+  const navigate = useNavigate();
+
+  function handleDetails(id) {
+    navigate(`/details/${id}`);
+  }
+
+  useEffect(() => {
+    async function fetchMovies() {
+      const response = await api.get(`/notes?title=${search}`);
+      setMovies(response.data);
+    }
+
+    fetchMovies();
+  }, [search]);
+
   return (
     <Container>
-      <Header></Header>
+      <Header>
+        <Input
+          placeholder="Pesquisar pelo título"
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </Header>
 
-      <Content>
-        <HomeTitle>
-          <h2>Meus Filmes</h2>
+      <main>
+        <header>
+          <h1>Meus filmes</h1>
 
-          <NewNote to="/new">
+          <NewMovie to="/new">
             <FiPlus />
             Adicionar filme
-          </NewNote>
-        </HomeTitle>
+          </NewMovie>
+        </header>
 
-        <Section title="minhas notas">
-          <Note
-            data={{
-              title: "React",
-              tags: [
-                { id: "1", name: "react" },
-                { id: "2", name: "rocketseat" },
-              ],
-            }}
-          />
-        </Section>
-      </Content>
+        <Content>
+          {movies.map((movie) => (
+            <Movie
+              key={String(movie.id)}
+              data={movie}
+              onClick={() => handleDetails(movie.id)}
+            />
+          ))}
+        </Content>
+      </main>
     </Container>
-  )
+  );
 }

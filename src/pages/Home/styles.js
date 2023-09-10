@@ -1,86 +1,61 @@
-import styled from "styled-components"
-import { Link } from "react-router-dom"
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
 
   display: grid;
-  grid-template-columns: 250px auto;
-  grid-template-rows: 105px 128px auto 64px;
+  grid-template-rows: 11.6rem auto;
   grid-template-areas:
-    "header header"
-    "content content"
-    "content content";
+    "header"
+    "content";
 
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
-`
-export const Brand = styled.div`
-  grid-area: brand;
+  > main {
+    grid-area: content;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    max-width: 113.7rem;
+    margin: 4.8rem auto;
 
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+      margin-bottom: 3.8rem;
 
-  > h1 {
-    font-size: 24px;
-    color: ${({ theme }) => theme.COLORS.PINK};
+      h1 {
+        font-weight: 400;
+      }
+    }
   }
-`
-
-export const Menu = styled.ul`
-  grid-area: menu;
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-  padding-top: 64px;
-  text-align: center;
-
-  > li {
-    margin-bottom: 24px;
-  }
-`
-
-export const Search = styled.div`
-  grid-area: search;
-
-  padding: 64px 64px 0;
-`
+`;
 
 export const Content = styled.div`
-  grid-area: content;
-  padding: 50px 64px;
+  max-height: calc(100vh - 29.7rem);
   overflow-y: auto;
-`
 
-export const NewNote = styled(Link)`
-  grid-area: newnote;
+  ::-webkit-scrollbar {
+    width: 0.8rem;
+  }
 
+  ::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.COLORS.PINK};
+    border-radius: 0.8rem;
+  }
+`;
+
+export const NewMovie = styled(Link)`
   background-color: ${({ theme }) => theme.COLORS.PINK};
-  color: ${({ theme }) => theme.COLORS.GRAY_200};
+  color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+  border: none;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 48px;
-  width: 207px;
-  padding: 32px;
-  border-radius: 8px;
+  gap: 0.8rem;
 
-  > svg {
-    margin-right: 8px;
-  }
-`
-
-export const HomeTitle = styled.div`
-  grid-area: HomeTitle;
-  color: ${({ theme }) => theme.COLORS.WHITE};
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 48px;
-`
+  padding: 1.35rem 3.2rem;
+  border-radius: 0.8rem;
+`;

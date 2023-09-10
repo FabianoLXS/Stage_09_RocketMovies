@@ -1,18 +1,13 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Container = styled.section`
-  margin: 28px 0;
+  margin: 3.2rem 0 2.4rem;
 
   > h2 {
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+    margin-bottom: 2.4rem;
 
-    padding-bottom: 16px;
-    margin-bottom: 24px;
-
-    color: ${({ theme }) => theme.COLORS.GRAY_100};
-    font-size: 20px;
+    color: ${({ theme }) => theme.COLORS.GRAY_300};
+    font-size: 2rem;
     font-weight: 400;
   }
-`
+`;
