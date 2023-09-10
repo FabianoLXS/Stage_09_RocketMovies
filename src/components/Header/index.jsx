@@ -11,16 +11,15 @@ export function Header(){
       </Search>
 
       <Profile to="/profile">
-        <img src="https://github.com/fabianolxs.png" alt="" />
         <div>
-          <span>Bem-vindo</span>
           <strong>Fabiano Xavier</strong>
+          <Logout>
+          <span>sair</span>
+          </Logout>
         </div>
+        <img src="https://github.com/fabianolxs.png" alt="" />
       </Profile>
-      
-      <Logout>
-        <RiShutDownLine />
-      </Logout>
+
     </Container>
   )
 }

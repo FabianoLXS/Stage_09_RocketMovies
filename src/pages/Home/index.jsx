@@ -10,10 +10,6 @@ import { ButtonText } from "../../components/ButtonText"
 export function Home() {
   return (
     <Container>
-      {/* <Brand>
-        <h1>RocketMovies</h1>
-      </Brand> */}
-
       <Header></Header>
 
       <Content>

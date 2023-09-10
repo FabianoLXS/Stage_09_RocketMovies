@@ -23,15 +23,19 @@ export const Profile = styled(Link)`
     width: 56px;
     height: 56px;
     border-radius: 50%;
+    margin-left: 9px;
   }
 
   > div {
     display: flex;
     flex-direction: column;
-    margin-left: 16px;
+    align-items: flex-end;
+    text-align: right;
+    
     line-height: 24px;
 
     span {
+      display: flex;
       font-size: 14px;
       color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
@@ -46,12 +50,6 @@ export const Profile = styled(Link)`
 export const Logout = styled.button`
   border: none;
   background: none;
-
-
-  > svg {
-    color: ${({theme}) => theme.COLORS.GRAY_100};
-    font-size: 24px;
-  }
 `
 
 export const Search = styled.div`
